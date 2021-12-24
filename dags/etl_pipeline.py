@@ -91,7 +91,6 @@ load_time_dimension_table = LoadDimensionOperator(
     dag=dag,
     table_name="time",
     sql_content=SqlQueries.time_table_insert
-   
 )
 
 run_quality_checks = DataQualityOperator(

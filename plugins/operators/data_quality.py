@@ -22,7 +22,7 @@ class DataQualityOperator(BaseOperator):
         
         redshift_conn = PostgresHook(postgres_conn_id=self.conn_id)
         
-        # Loop through tables
+        # Loop through data quality checks
         for c in self.dq_checks:
            
             records = redshift_conn.get_records(c.get('check_sql'))[0]
