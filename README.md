@@ -8,4 +8,4 @@ Sparkify, a music streaming company, has decided that it is time to introduce mo
 ## Setup
 
 1. Airflow
-2. python `3.x.x``
+2. python `3.x.x`
